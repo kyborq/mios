@@ -1,8 +1,7 @@
-import { useConsole } from "./hooks/useConsole";
+import { useSimulator } from "./hooks/useSimulator";
 
 function App() {
-  const { canvasRef } = useConsole();
-
+  const { canvasRef } = useSimulator();
   return <canvas ref={canvasRef} width={512} height={256}></canvas>;
 }
 
